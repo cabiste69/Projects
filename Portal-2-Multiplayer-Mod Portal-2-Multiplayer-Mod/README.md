@@ -1,12 +1,15 @@
+
 # PORTAL 2: MULTIPLAYER MOD
 
-![p2mm banner](Images/p2logo.png)
+## Introduction
 
-*This mod is completely server-side. Only the server operator needs to run Portal 2 with the mod installed. People who join the host should run stock Portal 2*
+P2MM is a mod for the popular Valve game, Portal 2. It allows players to easily create lobbies with up to 32 players in both cooperative and singleplayer mods.
 
-## Mod features
+This mod is completely server-sided, meaning only the host needs this mod installed, the rest of the player can run Portal 2 normally.
 
-- A maximum player cap of 33
+## Features
+
+- A maximum player cap of 32
 - Nametags
 - Custom Player colors
 - Chat commands (!help)
@@ -19,7 +22,7 @@
 - Togglable game options and config system exposed through VScript and a custom plugin
 - Support for SAR (SourceAutoRecord) for speedrunning
 
-## Features to be added
+## Planned Features
 
 - Steam Deck/SteamOS 3.0 support
 - More support for workshop maps
@@ -27,21 +30,21 @@
 
 # Installation & use
 
-**Steam guide on how to host and join a game:**
+**Steam guide explaining how to use the mod:**
 
-- <https://steamcommunity.com/sharedfiles/filedetails/?id=2458260280>
+- https://steamcommunity.com/sharedfiles/filedetails/?id=2458260280
 
-**Latest version:**
+**Downlaod latest version:**
 
-- <https://github.com/kyleraykbs/Portal2-32PlayerMod/releases/latest>
+- https://github.com/kyleraykbs/Portal2-32PlayerMod/releases/latest
 
 **Discord Server for technical help (MAKE SURE YOU READ THE FAQ!!!), bug report or to just chat:**
 
-- <https://discord.gg/kW3nG6GKpF>
+- https://discord.gg/kW3nG6GKpF
 
 # Build
 
-*We use Python 3.10 for the launcher*
+*We use Python 3.10*
 
 **Dependencies**
 
@@ -59,13 +62,13 @@ We use `pyinstaller` to make the executable
 - Windows:
 
 ```sh
-pyinstaller "src/MainWindow.py" -F -i "src/GUI/assets/images/p2mm64.ico" --noconsole --add-data "src/GUI;GUI" --add-data "src/ModFiles;ModFiles" --add-data "src/languages;languages"
+> pyinstaller "src/MainWindow.py" -F -i "src/GUI/assets/images/p2mm64.ico" --noconsole --add-data "src/GUI;GUI" --add-data "src/ModFiles;ModFiles" --add-data "src/languages;languages"
 ```
 
 - Linux:
 
 ```sh
-pyinstaller "src/MainWindow.py" -F --add-data "src/GUI:GUI" --add-data "src/ModFiles:ModFiles" --add-data "src/languages:languages"
+$ pyinstaller "src/MainWindow.py" -F --add-data "src/GUI:GUI" --add-data "src/ModFiles:ModFiles" --add-data "src/languages:languages"
 ```
 
 *Note:*
