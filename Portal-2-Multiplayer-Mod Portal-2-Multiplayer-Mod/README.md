@@ -1,13 +1,8 @@
-<div align="center">
-
 # PORTAL 2: MULTIPLAYER MOD
 
 ![p2mm banner](Images/p2logo.png)
 
-
 *This mod is completely server-side. Only the server operator needs to run Portal 2 with the mod installed. People who join the host should run stock Portal 2*
-
-<div align="left">
 
 ## Mod features
 
